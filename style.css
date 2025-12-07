@@ -1653,10 +1653,18 @@ footer {
 
 /* Merz Logo Styling */
 .merz-logo {
-    width: 140px;
+    width: 200px; /* Increased from 140px */
     height: auto;
     filter: invert(1); /* Turns white-on-black to black-on-white */
     mix-blend-mode: multiply; /* Removes white background */
     display: block;
-    margin: 10px 0;
+    margin: 5px 0 15px 0;
+}
+
+.ulthera-logo {
+    width: 160px;
+    height: auto;
+    mix-blend-mode: multiply;
+    display: block;
+    margin-bottom: 0;
 }
