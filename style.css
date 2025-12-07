@@ -1650,3 +1650,13 @@ footer {
 .sub-menu li a:hover {
     color: var(--color-gold);
 }
+
+/* Merz Logo Styling */
+.merz-logo {
+    width: 140px;
+    height: auto;
+    filter: invert(1); /* Turns white-on-black to black-on-white */
+    mix-blend-mode: multiply; /* Removes white background */
+    display: block;
+    margin: 10px 0;
+}
