@@ -1668,3 +1668,11 @@ footer {
     display: block;
     margin-bottom: 0;
 }
+
+.thermage-logo {
+    width: 200px;
+    height: auto;
+    mix-blend-mode: multiply;
+    display: block;
+    margin: 10px 0;
+}
