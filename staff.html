@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>의료진 소개 | 리브성형외과</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Promotion Bar -->
+    <div class="top-promo-bar">
+        <div class="container">
+            <span class="promo-badge">Event</span>
+            <span class="promo-text">THERMAGE FLX 🪄</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="LIV Plastic Surgery" class="logo-img">
+                </a>
+                
+                <nav class="gnb full-menu-overlay">
+                    <button class="close-btn">&times;</button>
+                    <div class="menu-container">
+                        <ul>
+                            <li>
+                                <a href="#">리브 소개</a>
+                                <ul class="sub-menu">
+                                    <li><a href="index.html#hero" onclick="toggleMenu()">리브 브랜드</a></li>
+                                    <li><a href="staff.html" onclick="toggleMenu()">의료진 소개</a></li>
+                                    <li><a href="index.html#equipment" onclick="toggleMenu()">보유 장비</a></li>
+                                    <li><a href="#">안심 시스템</a></li>
+                                    <li><a href="gallery.html" onclick="toggleMenu()">갤러리</a></li>
+                                    <li><a href="index.html#location" onclick="toggleMenu()">오시는 길</a></li>
+                                </ul>
+                            </li>
+                            <!-- Other menu items (Simplified for brevity or copied if critical? I should copy full menu to maintain consistency) -->
+                            <li>
+                                <a href="#">리브 시그니처</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">리브 딥프라임</a></li>
+                                    <li><a href="#">리브 써마지 스킨핏</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">리프팅 센터</a>
+                                <ul class="sub-menu">
+                                    <li><a href="procedures/lifting.html#ulthera">울쎄라</a></li>
+                                    <li><a href="#">써마지 FLX</a></li>
+                                    <li><a href="#">덴서티</a></li>
+                                    <li><a href="#">인모드</a></li>
+                                    <li><a href="#">슈링크</a></li>
+                                    <li><a href="#">실리프팅</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">안티에이징 센터</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">보톡스</a></li>
+                                    <li><a href="#">필러</a></li>
+                                    <li><a href="#">스킨부스터</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">레이저 센터</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">미백/기미/잡티</a></li>
+                                    <li><a href="#">모공/흉터</a></li>
+                                    <li><a href="#">여드름</a></li>
+                                    <li><a href="#">다크서클</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">전후사진</a></li>
+                            <li><a href="#">프로모션</a></li>
+                            <li>
+                                <a href="#">커뮤니티</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">시술 후 주의사항</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                
+                <div class="header-util">
+                    <a href="#" class="btn btn-gold" id="headerConsultBtn">상담예약</a>
+                </div>
+                 <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Medical Staff Section -->
+        <section class="medical-staff-section" id="staff" style="padding-top: 120px;"> <!-- Added padding for fixed header -->
+            <div class="container">
+                <div class="section-header fade-up">
+                    <h3>Medical Staff</h3>
+                    <p>리브성형외과 의료진을 소개합니다</p>
+                </div>
+
+                <div class="staff-grid">
+                    <!-- Dr. Kim -->
+                     <div class="staff-card fade-up">
+                        <div class="staff-img-placeholder">
+                            <span>Image<br>Coming Soon</span>
+                        </div>
+                        <div class="staff-info">
+                            <div class="staff-header">
+                                <span class="clinic-name">LIV PLASTIC SURGERY</span>
+                                <h4>김수영 <span class="eng-name">Kim Soo-young</span></h4>
+                                <span class="position">성형외과 전문의</span>
+                            </div>
+                            <ul class="career-list">
+                                <li><strong>현) 리브성형외과 대표원장</strong></li>
+                                <li>현) 이룸성형외과 대표원장</li>
+                                <li>전) 에프에이성형외과 원장</li>
+                                <li>전) 클라앤성형외과 원장</li>
+                                <li>전) 메이드미성형외과 원장</li>
+                                <li class="spacer"></li>
+                                <li>고려대학교 의과대학 졸업</li>
+                                <li>고려대학교 의료원 수련의 수료</li>
+                                <li>고려대학교 의료원 성형외과 레지던트 수료</li>
+                                <li>고려대학교 대학원 성형외과학 석사 취득</li>
+                                <li>고려대학교 의과대학 외래교수</li>
+                                <li>미국 텍사스주 휴스턴 MD Anderson Cancer Center 연수</li>
+                                <li class="spacer"></li>
+                                <li>대한성형외과의사회 정회원</li>
+                                <li>대한성형외과학회 정회원</li>
+                                <li>대한미용성형외과학회 정회원</li>
+                                <li>대한두개안면성형외과학회 정회원</li>
+                                <li>대한의료레이저학회 정회원</li>
+                            </ul>
+                            <div class="papers-box">
+                                <strong>논문 및 학회발표</strong> (Papers and Conference Presentations)
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dr. Cheon -->
+                    <div class="staff-card fade-up">
+                         <div class="staff-img-placeholder">
+                             <span>Image<br>Coming Soon</span>
+                        </div>
+                        <div class="staff-info">
+                            <div class="staff-header">
+                                <span class="clinic-name">LIV PLASTIC SURGERY</span>
+                                <h4>천신혜 <span class="eng-name">Cheon Shin-hye</span></h4>
+                                <span class="position">가정의학과 전문의</span>
+                            </div>
+                            <ul class="career-list">
+                                <li><strong>현) 리브성형외과 원장</strong></li>
+                                <li>전) 이룸성형외과 원장</li>
+                                <li>전) 연세미엔의원 원장</li>
+                                <li>전) 아비쥬 의원 원장</li>
+                                <li>전) 로제피부과의원 원장</li>
+                                <li class="spacer"></li>
+                                <li>계명대학교 의과대학 졸업</li>
+                                <li>한림대학교 강남성심병원 전공의 수료</li>
+                                <li>한림대학교 강남성심병원 외래교수</li>
+                                <li class="spacer"></li>
+                                <li>대한가정의학회 정회원</li>
+                                <li>대한미용성형레이저의학회 정회원</li>
+                                <li>대한비만미용치료학회 정회원</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">LIV PLASTIC SURGERY</div>
+                 <div class="sns-links">
+                    <a href="https://www.instagram.com/livps_official/" target="_blank">Instagram</a>
+                    <a href="https://www.youtube.com/@%EB%A6%AC%EB%B8%8C%EC%84%B1%ED%98%95%EC%99%B8%EA%B3%BC" target="_blank">Youtube</a>
+                    <a href="https://blog.naver.com/liv_clinic" target="_blank">Blog</a>
+                </div>
+            </div>
+            <div class="footer-info">
+                <p>상호명: 리브성형외과의원 LIV PLASTIC SURGERY | 대표자: 김수영</p>
+                <p>주소: 서울특별시 서초구 나루터로 80 자은빌딩 4층 리브성형외과</p>
+                <p>TEL: 02-797-2773 | <a href="#" style="color: #999; text-decoration: none;">개인정보처리방침</a></p>
+                <p class="copyright">© 2024 LIV PLASTIC SURGERY. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Side Panel & Floating Bar -->
+    <div class="consult-panel-overlay" id="consultOverlay"></div>
+    <div class="consult-panel" id="consultPanel">
+        <div class="panel-header">
+            <h3>빠른 상담 신청</h3>
+            <button class="panel-close-btn" id="panelCloseBtn">&times;</button>
+        </div>
+        <div class="panel-body">
+             <form class="quick-consult-form">
+                <div class="form-group">
+                    <label>이름</label>
+                    <input type="text" placeholder="홍길동" required>
+                </div>
+                <div class="form-group">
+                    <label>연락처</label>
+                    <input type="tel" placeholder="010-0000-0000" required>
+                </div>
+                <div class="form-group">
+                    <label>문의내용</label>
+                    <textarea placeholder="궁금하신 내용을 남겨주세요." rows="4" style="width: 100%; padding: 12px; border: 1px solid #ddd; resize: none;"></textarea>
+                </div>
+                <button type="submit" class="consult-submit-btn" style="background-color: #1a1a2e;">상담 신청하기</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="floating-bar">
+        <a href="tel:02-797-2773"><i class="fa-solid fa-phone"></i> 전화상담</a>
+        <a href="https://pf.kakao.com/_hgFwn" target="_blank"><i class="fa-solid fa-comment"></i> 카톡상담</a>
+        <a href="https://www.wechat.com/" target="_blank"><i class="fa-brands fa-weixin"></i> Wechat</a>
+        <a href="https://line.me/ti/p/VJYu9BSnsX" target="_blank"><i class="fa-brands fa-line"></i> Line</a>
+        <a href="#" class="highlight" id="quickConsultBtn"><i class="fa-solid fa-paper-plane"></i> 빠른상담</a>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Copying Hamburger/Menu/Panel Logic Here since script.js handles animations mainly?
+        // Wait, script.js might handle sticky header.
+        // I will copy the Menu/Panel Logic from index.html here.
+        
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const overlay = document.querySelector('.full-menu-overlay');
+        const closeBtn = document.querySelector('.close-btn');
+        const menuItems = document.querySelectorAll('.full-menu-overlay > .menu-container > ul > li > a');
+
+        function toggleMenu() {
+            overlay.classList.toggle('active');
+            document.body.classList.toggle('menu-open');
+        }
+
+        if (menuBtn) menuBtn.addEventListener('click', toggleMenu);
+        if (closeBtn) closeBtn.addEventListener('click', toggleMenu);
+
+        // Sub-menu Toggle
+        menuItems.forEach(item => {
+            item.addEventListener('click', (e) => {
+                const subMenu = item.nextElementSibling;
+                if (subMenu && subMenu.classList.contains('sub-menu')) {
+                    e.preventDefault();
+                    menuItems.forEach(otherItem => {
+                        const otherSubMenu = otherItem.nextElementSibling;
+                        if (otherSubMenu && otherSubMenu !== subMenu && otherSubMenu.classList.contains('sub-menu')) {
+                            otherSubMenu.classList.remove('open');
+                        }
+                    });
+                    subMenu.classList.toggle('open');
+                }
+            });
+        });
+
+        // Panel Logic
+        const consultBtn = document.getElementById('quickConsultBtn');
+        const headerConsultBtn = document.getElementById('headerConsultBtn');
+        const consultPanel = document.getElementById('consultPanel');
+        const consultOverlay = document.getElementById('consultOverlay');
+        const panelCloseBtn = document.getElementById('panelCloseBtn');
+
+        function toggleConsultPanel(e) {
+            if(e) e.preventDefault();
+            consultPanel.classList.toggle('active');
+            consultOverlay.classList.toggle('active');
+            document.body.style.overflow = consultPanel.classList.contains('active') ? 'hidden' : '';
+        }
+
+        if (consultBtn) consultBtn.addEventListener('click', toggleConsultPanel);
+        if (headerConsultBtn) headerConsultBtn.addEventListener('click', toggleConsultPanel);
+        if (panelCloseBtn) panelCloseBtn.addEventListener('click', toggleConsultPanel);
+        if (consultOverlay) consultOverlay.addEventListener('click', toggleConsultPanel);
+    </script>
+</body>
+</html>

@@ -1407,7 +1407,8 @@ footer {
         gap: 20px;
     }
     .gallery-item {
-        height: 300px;
+        height: auto;
+        min-height: 250px;
     }
     .item-large, .item-tall, .item-wide {
         grid-column: auto;
@@ -1520,6 +1521,10 @@ footer {
     }
     .hero-content h2 {
         font-size: 40px;
+        line-height: 1.2;
+    }
+    .hero-content p {
+        font-size: 16px;
     }
     .cert-grid {
         flex-direction: column;
@@ -1527,5 +1532,20 @@ footer {
     }
     .eq-grid {
         grid-template-columns: 1fr;
+    }
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .section-header h3 {
+        font-size: 28px;
+    }
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .footer-links {
+        justify-content: center;
     }
 }
