@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쁘띠 센터 | 리브성형외과</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="procedures.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="../index.html" class="logo">
+                    <span class="logo-text">LIV <small>PLASTIC SURGERY</small></span>
+                </a>
+                
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="#">About Liv</a></li>
+                        <li><a href="lifting.html">Lifting Center</a></li>
+                        <li><a href="petit.html" style="color:var(--color-gold);">Petit Center</a></li>
+                        <li><a href="#">Laser & Skin</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-util">
+                    <a href="#" class="btn btn-gold">상담예약</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sub Header -->
+    <section class="sub-header">
+        <div class="container">
+            <h2>Petit Center</h2>
+            <p>자연스러운 아름다움을 위한 섬세한 터치</p>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="sub-content container">
+        
+        <div class="content-block">
+            <h3>Filler & Botox (필러 & 보톡스)</h3>
+            <div class="device-info">
+                <div class="device-img">
+                     <!-- Placeholder until images are provided -->
+                     <span style="color:#aaa;">Petit Image Placeholder</span>
+                </div>
+                <div class="device-desc">
+                    <h4>섬세한 볼륨과 주름 개선</h4>
+                    <p>
+                        개인의 얼굴형에 맞는 맞춤 디자인으로 자연스러운 아름다움을 완성합니다. 정품, 정량 사용을 원칙으로 하여 안전하고 효과적인 시술을 약속드립니다.
+                    </p>
+                    <ul style="list-style:disc; padding-left:20px; color:#555;">
+                        <li>숙련된 의료진의 섬세한 디자인</li>
+                        <li>안전성이 입증된 정품 제품 사용</li>
+                        <li>멍과 붓기를 최소화한 시술</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="content-block">
+            <h3>FAQ</h3>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-q">필러 유지 기간은 얼마나 되나요?</div>
+                    <div class="faq-a">제품 종류와 시술 부위에 따라 다르지만, 보통 국산 제품은 6개월~1년, 수입 제품은 1년~2년 정도 유지됩니다.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">보톡스 시술 후 주의사항이 있나요?</div>
+                    <div class="faq-a">시술 후 4시간 동안은 눕지 않는 것이 좋으며, 일주일 정도는 사우나, 찜질방, 과도한 운동을 피해주시는 것이 좋습니다.</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">LIV PLASTIC SURGERY</div>
+            </div>
+            <div class="footer-info">
+                <p>상호명: 리브성형외과 | 대표자: 홍길동 | 사업자등록번호: 000-00-00000</p>
+                <p>주소: 서울특별시 강남구 도산대로 000, 0층</p>
+                <p>TEL: 02-000-0000 | FAX: 02-000-0000</p>
+                <p class="copyright">© 2024 LIV PLASTIC SURGERY. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple FAQ Toggle
+        document.querySelectorAll('.faq-q').forEach(q => {
+            q.addEventListener('click', () => {
+                q.parentElement.classList.toggle('active');
+            });
+        });
+
+        // Header Scroll
+        const header = document.querySelector('#header');
+        window.addEventListener('scroll', () => {
+             if (window.scrollY > 50) header.classList.add('scrolled');
+             else header.classList.remove('scrolled');
+        });
+    </script>
+</body>
+</html>

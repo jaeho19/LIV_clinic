@@ -1,0 +1,153 @@
+/* Subpage Styles */
+.sub-header {
+    height: 300px; /* Reduced specific height */
+    background-color: var(--color-main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    margin-top: var(--header-height); /* Offset for fixed header */
+}
+
+.sub-header h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.sub-content {
+    padding: 100px 0;
+}
+
+.sub-content {
+    padding: 50px 0 100px; /* Adjusted padding */
+}
+
+.content-block {
+    display: none; /* Hide all by default */
+    animation: fadeIn 0.5s ease;
+}
+
+.content-block.active {
+    display: block; /* Show only active */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* FAQ Section - Always Visible */
+.content-block.faq-section {
+    display: block;
+    margin-top: 100px;
+    border-top: 2px solid #eee;
+    padding-top: 50px;
+}
+
+.content-block h3 {
+    font-size: 32px;
+    color: var(--color-main);
+    margin-bottom: 30px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.content-block h3::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 24px;
+    background-color: var(--color-gold);
+}
+
+.device-info {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.device-img {
+    flex: 1;
+    background-color: #f0f0f0;
+    /* Removed fixed height to allow flexibility for tall images */
+    min-height: 400px;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Add padding to prevent image touching edges */
+}
+
+.device-img img {
+    max-width: 100%;
+    /* Limit height to prevent extremely tall images from dominating */
+    max-height: 500px; 
+    object-fit: contain;
+}
+
+.device-desc {
+    flex: 1;
+}
+
+.device-desc h4 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.device-desc p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.faq-list {
+    border-top: 1px solid #eee;
+}
+
+.faq-item {
+    border-bottom: 1px solid #eee;
+}
+
+.faq-q {
+    padding: 20px 0;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-q::after {
+    content: '+';
+    font-size: 24px;
+    color: var(--color-gold);
+}
+
+.faq-a {
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #555;
+    display: none; /* Hidden by default */
+}
+
+.faq-item.active .faq-a {
+    display: block;
+}
+
+.faq-item.active .faq-q::after {
+    content: '-';
+}
+
+@media (max-width: 768px) {
+    .device-info {
+        flex-direction: column;
+    }
+}
