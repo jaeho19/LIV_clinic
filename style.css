@@ -1658,7 +1658,7 @@ footer {
     filter: invert(1); /* Turns white-on-black to black-on-white */
     mix-blend-mode: multiply; /* Removes white background */
     display: block;
-    margin: 5px 0 15px 0;
+    margin: 5px 0 5px 0; /* Reduced bottom margin from 15px to 5px */
 }
 
 .ulthera-logo {
