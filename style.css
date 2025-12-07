@@ -1676,3 +1676,11 @@ footer {
     display: block;
     margin: 10px 0;
 }
+
+.inmode-logo {
+    width: 200px;
+    height: auto;
+    mix-blend-mode: multiply;
+    display: block;
+    margin: 10px 0;
+}
