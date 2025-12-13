@@ -186,7 +186,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 50px; /* Adjust based on header height */
     width: auto;
     object-fit: contain;
-    filter: brightness(0) invert(1); /* Make it white for dark header */
+    /* filter: brightness(0) invert(1); REMOVED to show original logo colors */
 }
 
 /* Mobile Menu Button - Visible on all screens now per request */
