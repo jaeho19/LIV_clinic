@@ -186,9 +186,6 @@ h1, h2, h3, h4, h5, h6 {
     height: 50px; /* Adjust based on header height */
     width: auto;
     object-fit: contain;
-    /* CSS Trick Refined: Invert to make text white, Black BG. Lighten to hide Black BG against dark header. */
-    filter: invert(1) grayscale(1) contrast(150%);
-    mix-blend-mode: lighten;
 }
 
 /* Mobile Menu Button - Visible on all screens now per request */
