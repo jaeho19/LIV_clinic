@@ -186,7 +186,9 @@ h1, h2, h3, h4, h5, h6 {
     height: 50px; /* Adjust based on header height */
     width: auto;
     object-fit: contain;
-    /* filter: brightness(0) invert(1); Removed to show new logo colors */
+    /* CSS Trick to remove white background and make text white */
+    filter: invert(1) grayscale(1) brightness(2); 
+    mix-blend-mode: screen;
 }
 
 /* Mobile Menu Button - Visible on all screens now per request */
